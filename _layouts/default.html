@@ -8,15 +8,16 @@
 
 <header>
   <h1>Jekyll exercise</h1>
-  <nav>
-    <lu>
-      <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-      <li><a href="{{site.baseurl}}/news.html">News</a></li>
-    </lu>
-  </nav>
+  {% include nav.html%}
 </header>
 
 {{content}}
+
+<footer>
+  {% include nav.html%}
+  <p>© 2016 Jekyll exercise</p>
+</footer>
+
 
 </body>
 </html>
