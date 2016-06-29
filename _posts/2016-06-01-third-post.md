@@ -2,7 +2,7 @@
 layout: news
 title: THIRD
 meta: Third post
-category: news
+category: recently
 ---
 
 Third post

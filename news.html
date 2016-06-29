@@ -4,6 +4,19 @@ layout: default
 
 <h1>News</h1>
 
+<h2>Recently</h2>
+<ul>
+
+  {% for news in site.categories.recently %}
+    <il>
+      <a href="">{{news.title}}</a>
+      <p>{{news.meta}}</p>
+    </il>
+  {% endfor %}
+
+</ul>
+
+<h2>All</h2>
 <ul>
 
   {% for news in site.posts %}
