@@ -19,7 +19,7 @@ layout: default
 <h2>All</h2>
 <ul>
 
-  {% for news in site.posts %}
+  {% for news in site.posts limit:2 %}
     <il>
       <a href="">{{news.title}}</a>
       <p>{{news.meta}}</p>
