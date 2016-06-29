@@ -2,10 +2,10 @@
 layout: news
 ---
 
-<h2>All news</h2>
+<h2>Recentlies news</h2>
 <ul>
 
-  {% for news in site.posts limit:2 %}
+  {% for news in site.categories.recently %}
     <il>
       <a href="">{{news.title}}</a>
       <p>{{news.meta}}</p>
