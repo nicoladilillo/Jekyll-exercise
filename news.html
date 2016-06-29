@@ -5,9 +5,9 @@ layout: news
 <h2>All news</h2>
 <ul>
 
-  {% for news in site.posts limit:2 %}
+  {% for news in site.posts %}
     <il>
-      <a href="">{{news.title}}</a>
+      <a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a>
       <p>{{news.meta}}</p>
     </il>
   {% endfor %}
